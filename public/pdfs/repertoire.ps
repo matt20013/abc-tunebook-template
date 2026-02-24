@@ -1,12 +1,12 @@
 %!PS-Adobe-2.0
-%%BoundingBox: 0 0 612 792
-%%Title: /abcs/repertoire.abc
+%%BoundingBox: 0 0 595 842
+%%Title: /github/workspace/abcs/repertoire.abc
 %%Creator: abcm2ps-8.14.11
-%%CreationDate: Feb 24, 2026 16:20
+%%CreationDate: Feb 24, 2026 20:06
 %%Pages: (atend)
 %%LanguageLevel: 3
 %%EndComments
-%CommandLine: -O /pdfs/repertoire_raw.ps -F /scripts/default.fmt /abcs/repertoire.abc
+%CommandLine: -O /github/workspace/public/pdfs/repertoire_raw.ps -F /scripts/default.fmt /github/workspace/abcs/repertoire.abc
 
 %%BeginSetup
 /!{bind def}bind def
@@ -345,251 +345,55 @@ exch pop cos div
 	30 0 360 arc stroke grestore}!
 /pdfmark where{pop}{userdict/pdfmark/cleartomark load put}ifelse
 0 setlinecap 0 setlinejoin
-/hbrce{	-2.5 1 RM
-	-4.5 -4.6 -7.5 -12.2 -4.4 -26.8 RC
-	3.5 -14.3 3.2 -21.7 -2.1 -24.2 RC
-	7.4 2.4 7.3 14.2 3.5 29.5 RC
-	-2.7 9.5 -1.5 16.2 3 21.5 RC
-	fill}!
-/brace{	gsave T 0 0 M .01 mul 1 exch scale hbrce
-	0 -100 M 1 -1 scale hbrce grestore}!
-/sgno{	3 add M currentpoint currentpoint currentpoint
-	1.5 -1.7 6.4 0.3 3 3.7 RC
-	-10.4 7.8 -8 10.6 -6.5 11.9 RC
-	4 1.9 5.9 -1.7 4.2 -2.6 RC
-	-1.3 -0.7 -2.9 1.3 -0.7 2 RC
-	-1.5 1.7 -6.4 -0.3 -3 -3.7 RC
-	10.4 -7.8 8 -10.6 6.5 -11.9 RC
-	-4 -1.9 -5.9 1.7 -4.2 2.6 RC
-	1.3 0.7 2.9 -1.3 0.7 -2 RC
-	fill
-	M 0.8 SLW -6 1.2 RM 12.6 12.6 RL stroke
-	7 add exch 6 sub exch 1.2 0 360 arc fill
-	8 add exch 6 add exch 1.2 0 360 arc fill}!
-/dacoda{2 1 roll 10 add 2 1 roll dup 3 -1 roll dup 3 1 roll -23 add 4 1 roll
-	1 SLW 2 add 2 copy M 0 20 RL
-	2 copy M -10 10 RM 20 0 RL stroke
-	10 add 6 0 360 arc 1.7 SLW stroke
-	/Times-Roman 16 selectfont 7 add M (Da) showc}!
-/coda{	1 SLW 2 add 2 copy M 0 20 RL
-	2 copy M -10 10 RM 20 0 RL 1.1 SLW stroke
-	exch -7 add exch (O) 3 1 roll /Times-Bold 18 selectfont 4 add M show}!
-/utclef{<95200072
-	0000ff2e01c2030c
-	00ac0056
-	0064007f006400f400e00112
-	0176011c01bc0056013a0012
-	00c8ffde002700120015009a
-	0006014f0072017f00f101e8
-	0149023f0140026d012f02ba
-	00fc029900d1025100d60200
-	00e700f500fa008a0107ffc2
-	010dff6200f4ff3c00baff3b
-	006aff3a003cff98007dffc0
-	00d2ffe90102ff5b009cff57
-	00b3ff4600f8ff3200f6ffb3
-	00ec009200cf010900c4021c
-	00c4027600c402be01240304
-	015c02bc0163021e013a01e3
-	00f001790039013b003b00a7
-	0044000e00cfffee01370022
-	018d0063015400e200e700d2
-	00a000c6007e008f00ac0056
-	><0b000132050a>}cvlit def
-/tclef{gsave T -10 -6 T .045 dup scale utclef ufill grestore}!
-/ucclef{<95200066
-	006effbe01e70256
-	00d10108
-	00d10002
-	00c40002
-	00c40213
-	00d10213
-	00d10113
-	00ea012700fa013701100180
-	011e0161011d014d0148013a
-	01a2011801a80244011f01f3
-	015301e0013a01a3011401a6
-	00ba01cc01350256019f01eb
-	01e7019c01a000fa01190131
-	0109010a
-	011900e4
-	01a0011b01e70079019f002a
-	0135ffbe00ba00490114006f
-	013a007201530035011f0022
-	01a8ffd101a200fd014800db
-	011d00c8011b00bd0110009b
-	00fa00e400ea00f400d10108
-	006e0213
-	00a70213
-	00a70002
-	006e0002
-	006e0213
-	><0b000125032605220326050a0124030a>}cvlit def
-/cclef{gsave T -12 -12 T .045 dup scale ucclef ufill grestore}!
-/ubclef{<95200046
-	00000050019a0244
-	00010057
-	007d007a00df00a500ff0143
-	012a022700580239003f01aa
-	007a01fa00dc0194009b015c
-	005d012d00280172003101b4
-	00460241013f023c01430180
-	014200d100d9007800010057
-	01660151
-	016601750199017301990151
-	0199012c0166012d01660151
-	016401d2
-	016401f6019701f4019701d2
-	019701ac016401ad016401d2
-	><0b000126050a0122050a0122050a>}cvlit def
-/bclef{gsave T -10 -18 T .045 dup scale ubclef ufill grestore}!
-/pclef{	exch 2.7 sub exch -9 add 5.4 18 1.4 SLW rectstroke}!
-/spclef{pclef}!
-/stclef{gsave T -10 -6 T .037 dup scale utclef ufill grestore}!
-/scclef{gsave T -12 -10 T .037 dup scale ucclef ufill grestore}!
-/sbclef{gsave T -10 -15 T .037 dup scale ubclef ufill grestore}!
-/csig{	M
-	6 5.3 RM
-	0.9 0 2.3 -0.7 2.4 -2.2 RC
-	-1.2 2 -3.6 -0.1 -1.6 -1.7 RC
-	2 -1 3.8 3.5 -0.8 4.7 RC
-	-2 0.4 -6.4 -1.3 -5.8 -7 RC
-	0.4 -6.4 7.9 -6.8 9.1 -0.7 RC
-	-2.3 -5.6 -6.7 -5.1 -6.8 0 RC
-	-0.5 4.4 0.7 7.5 3.5 6.9 RC
-	fill}!
-/ctsig{dlw 2 copy csig M 5 -8 RM 0 16 RL stroke}!
-/HDD{	dlw HD
-	x y M -6 -4 RM 0 8 RL
-	12 0 RM 0 -8 RL stroke}!
-/breve{	xymove
-	2.5 SLW -6 -2.7 RM 12 0 RL
-	0 5.4 RM -12 0 RL stroke
-	dlw x y M -6 -5 RM 0 10 RL
-	12 0 RM 0 -10 RL stroke}!
-/HD{	xymove
-	-2.7 1.4 RM
-	1.5 2.8 6.9 0 5.3 -2.7 RC
-	-1.5 -2.8 -6.9 0 -5.3 2.7 RC
-	8.3 -1.4 RM
-	0 1.5 -2.2 3 -5.6 3 RC
-	-3.4 0 -5.6 -1.5 -5.6 -3 RC
-	0 -1.5 2.2 -3 5.6 -3 RC
-	3.4 0 5.6 1.5 5.6 3 RC fill}!
-/Hd{	xymove
-	3 1.6 RM
-	-1 1.8 -7 -1.4 -6 -3.2 RC
-	1 -1.8 7 1.4 6 3.2 RC
-	0.5 0.3 RM
-	2 -3.8 -5 -7.6 -7 -3.8 RC
-	-2 3.8 5 7.6 7 3.8 RC fill}!
-/uhd{{	100 -270 640 280
-	560 82
-	474 267 105 105 186 -80
-	267 -265 636 -102 555 82
-	}<0b000122050a>}cvlit def
-/hd{	/x 2 index def/y 1 index def
-	gsave T -7.4 0 T .02 dup scale uhd ufill grestore}!
-/ft0{	gsave T -3.5 -3.5 T .018 dup scale uflat ufill grestore}!
-/nt0{	gsave T -3 -5 T .018 dup scale unat ufill grestore}!
-/sh0{	gsave T -4 -5 T .018 dup scale usharp ufill grestore}!
-/dsh0{	gsave T -4 -5 T .018 dup scale udblesharp ufill grestore}!
-/pshhd{/x 2 index def/y 1 index def dsh0}!
-/dft0{	gsave T -4 -3.5 T .018 dup scale udbleflat ufill grestore}!
-/accent{1.2 SLW M -4 1 RM 8 2 RL -8 2 RL stroke}!
-/marcato{M -3 0 RM 3 7 RL 3 -7 RL -1.5 0 RL -1.8 4.2 RL -1.7 -4.2 RL fill}!
-/hld{	1.5 add 2 copy 1.5 add M currentpoint 1.3 0 360 arc
-	M -7.5 0 RM
-	0 11.5 15 11.5 15 0 RC
-	-0.25 0 RL
-	-1.25 9 -13.25 9 -14.5 0 RC
-	fill}!
-/r00{	xymove -1.5 -6 RM currentpoint 3 12 rectfill}!
-/r0{	xymove -1.5 0 RM currentpoint 3 6 rectfill}!
-/r1{	xymove -3.5 3 RM currentpoint 7 3 rectfill}!
-/r2{	xymove -3.5 0 RM currentpoint 7 3 rectfill}!
-/r4{	xymove
-	-1 8.5 RM
-	3.6 -5.1 RL
-	-2.1 -5.2 RL
-	2.2 -4.3 RL
-	-2.6 2.3 -5.1 0 -2.4 -2.6 RC
-	-4.8 3 -1.5 6.9 1.4 4.1 RC
-	-3.1 4.5 RL
-	1.9 5.1 RL
-	-1.5 3.5 RL
-	fill}!
-/r8e{	-1.5 -1.5 -2.4 -2 -3.6 -2 RC
-	2.4 2.8 -2.8 4 -2.8 1.2 RC
-	0 -2.7 4.3 -2.4 5.9 -0.6 RC
-	fill}!
-/r8{	xymove
-	.5 SLW 3.3 4 RM
-	-3.4 -9.6 RL stroke
-	x y M 3.4 4 RM r8e}!
-/r16{	xymove
-	.5 SLW 3.3 4 RM
-	-4 -15.6 RL stroke
-	x y M 3.4 4 RM r8e
-	x y M 1.9 -2 RM r8e}!
-/r32{	xymove
-	.5 SLW 4.8 10 RM
-	-5.5 -21.6 RL stroke
-	x y M 4.9 10 RM r8e
-	x y M 3.4 4 RM r8e
-	x y M 1.9 -2 RM r8e}!
-/r64{	xymove
-	.5 SLW 4.8 10 RM
-	-7 -27.6 RL stroke
-	x y M 4.9 10 RM r8e
-	x y M 3.4 4 RM r8e
-	x y M 1.9 -2 RM r8e
-	x y M 0.4 -8 RM r8e}!
-/r128{	xymove
-	.5 SLW 5.8 16 RM
-	-8.5 -33.6 RL stroke
-	x y M 5.9 16 RM r8e
-	x y M 4.4 10 RM r8e
-	x y M 2.9 4 RM r8e
-	x y M 1.4 -2 RM r8e
-	x y M -0.1 -8 RM r8e}!
-/mrest{	M currentpoint 1 SLW
-	-20 -6 RM 0 12 RL 40 0 RM 0 -12 RL stroke
-	M 5 SLW -20 0 RM 40 0 RL stroke}!
-/mrep{	2 copy 2 copy
-	M -5 3 RM currentpoint 1.4 0 360 arc
-	M 5 -3 RM currentpoint 1.4 0 360 arc
-	M -7 -6 RM 11 12 RL 3 0 RL -11 -12 RL -3 0 RL fill}!
-/mrep2{	2 copy 2 copy
-	M -5 6 RM currentpoint 1.4 0 360 arc
-	M 5 -6 RM currentpoint 1.4 0 360 arc fill
-	M 1.8 SLW
-	-7 -8 RM 14 10 RL -14 -4 RM 14 10 RL stroke}!
-/turn{	M 5.2 8 RM
-	1.4 -0.5 0.9 -4.8 -2.2 -2.8 RC
-	-4.8 3.5 RL
-	-3 2 -5.8 -1.8 -3.6 -4.4 RC
-	1 -1.1 2 -0.8 2.1 0.1 RC
-	0.1 0.9 -0.7 1.2 -1.9 0.6 RC
-	-1.4 0.5 -0.9 4.8 2.2 2.8 RC
-	4.8 -3.5 RL
-	3 -2 5.8 1.8 3.6 4.4 RC
-	-1 1.1 -2 0.8 -2.1 -0.1 RC
-	-0.1 -0.9 0.7 -1.2 1.9 -0.6 RC
-	fill}!
-/umrd{	4 add M
-	2.2 2.2 RL 2.1 -2.9 RL 0.7 0.7 RL
-	-2.2 -2.2 RL -2.1 2.9 RL -0.7 -0.7 RL
-	-2.2 -2.2 RL -2.1 2.9 RL -0.7 -0.7 RL
-	2.2 2.2 RL 2.1 -2.9 RL 0.7 0.7 RL fill}!
-/lmrd{	2 copy umrd M .6 SLW 0 8 RL stroke}!
-/ped{	/Times-BoldItalic 16 selectfont M -10 2 RM(Ped)show}!
-/pedoff{	/Times-BoldItalic 16 selectfont M -4 2 RM(*)show}!
-/longa{	xymove
-	2.5 SLW -6 -2.7 RM 12 0 RL
-	0 5.4 RM -12 0 RL stroke
-	dlw x y M -6 -5 RM 0 10 RL
-	12 0 RM 0 -16 RL stroke}!
+/musgly{music 24 selectfont glyphshow}!
+/brace{gsave
+	T -7.5 0 M -.042 mul 3 exch scale/uniE000 musgly
+	grestore}!
+/sgno{	M -6 4 RM/uniE047 musgly}!
+/coda{	M -12 6 RM/uniE048 musgly}!
+/tclef{M -8 0 RM/uniE050 musgly}!
+/cclef{M -8 0 RM/uniE05C musgly}!
+/bclef{M -8 0 RM/uniE062 musgly}!
+/pclef{M -6 0 RM/uniE069 musgly}!
+/stclef{M -8 0 RM/uniE07A musgly}!
+/scclef{M -8 0 RM/uniE07B musgly}!
+/sbclef{M -7 0 RM/uniE07C musgly}!
+/csig{	M 0 0 RM/uniE08A musgly}!
+/ctsig{M 0 0 RM/uniE08B musgly}!
+/HDD{	xymove -7 0 RM/uniE0A0 musgly}!
+/breve{xymove -6 0 RM/uniE0A1 musgly}!
+/HD{	xymove -5.2 0 RM/uniE0A2 musgly}!
+/Hd{	xymove -3.8 0 RM/uniE0A3 musgly}!
+/hd{	xymove -3.7 0 RM/uniE0A4 musgly}!
+/ft0{	M -3 0 RM/uniE260 musgly}!
+/nt0{	M -2 0 RM/uniE261 musgly}!
+/sh0{	M -3 0 RM/uniE262 musgly}!
+/dsh0{	M -3 0 RM/uniE263 musgly}!
+/pshhd{xymove -3 0 RM/uniE263 musgly}!
+/dft0{	M -3 0 RM/uniE264 musgly}!
+/accent{M -3 0 RM/uniE4A0 musgly}!
+/marcato{M -3 0 RM/uniE4AC musgly}!
+/hld{	M -7 0 RM/uniE4C0 musgly}!
+/r00{	xymove -1.5 0 RM/uniE4E1 musgly}!
+/r0{	xymove -1.5 0 RM/uniE4E2 musgly}!
+/r1{	xymove -3.5 6 RM/uniE4E3 musgly}!
+/r2{	xymove -3.2 0 RM/uniE4E4 musgly}!
+/r4{	xymove -3 0 RM/uniE4E5 musgly}!
+/r8{	xymove -3 0 RM/uniE4E6 musgly}!
+/r16{	xymove -4 0 RM/uniE4E7 musgly}!
+/r32{	xymove -4 0 RM/uniE4E8 musgly}!
+/r64{	xymove -4 0 RM/uniE4E9 musgly}!
+/r128{	xymove -4 0 RM/uniE4EA musgly}!
+/mrest{M -10 0 RM/uniE4EE musgly}!
+/mrep{	M -6 0 RM/uniE500 musgly}!
+/mrep2{M -9 0 RM/uniE501 musgly}!
+/turn{	M -4 0 RM/uniE567 musgly}!
+/umrd{	M -7 2 RM/uniE56C musgly}!
+/lmrd{	M -7 2 RM/uniE56D musgly}!
+/ped{	M -10 0 RM/uniE650 musgly}!
+/pedoff{M -6 0 RM/uniE655 musgly}!
+/longa{xymove -6 0 RM/uniE95C musgly}!
+/music/Petaluma def
 /su{dlw x y M 3.5 1.0 RM 1.0 sub 0 exch RL stroke}!
 /sd{dlw x y M -3.5 -1.0 RM 1.0 add 0 exch RL stroke}!
 /sfu{	dlw x y M 3.5 1.0 RM
@@ -677,6 +481,14 @@ exch pop cos div
 		3 -1.5 RL 0 -2 RL -3 1.5 RL
 		closepath fill 3 sub M
 	}repeat}!
+/fontredef{
+findfont dup length
+dict begin
+{1 index/FID ne{def}{pop pop}ifelse}forall
+currentdict
+end
+definefont pop}!
+
 /mkfont{findfont dup length 1 add dict begin
 	{1 index/FID ne{def}{pop pop}ifelse}forall
 	CharStrings/double_sharp known not{
@@ -695,16 +507,14 @@ exch pop cos div
 		CharStrings/double_flat{pop 500 0 setcharwidth udbleflat ufill}bind put
 	    }ifelse
 	}if currentdict definefont pop end}!
-/Helvetica-utf8/Helvetica mkfont
-/F0{/Helvetica-utf8 exch selectfont}!
-/Times-Italic-utf8/Times-Italic mkfont
-/F1{/Times-Italic-utf8 exch selectfont}!
-/Times-Roman-utf8/Times-Roman mkfont
-/F2{/Times-Roman-utf8 exch selectfont}!
-/Times-Bold-utf8/Times-Bold mkfont
-/F3{/Times-Bold-utf8 exch selectfont}!
+/MarkerFelt-Wide-utf8/MarkerFelt-Wide mkfont
+/F4{/MarkerFelt-Wide-utf8 exch selectfont}!
+/Courier-Bold-utf8/Courier-Bold mkfont
+/F5{/Courier-Bold-utf8 exch selectfont}!
+/Courier-utf8/Courier mkfont
+/F6{/Courier-utf8 exch selectfont}!
 /setpagedevice where{pop
-	<</PageSize[612 792]>>setpagedevice}if
+	<</PageSize[595 842]>>setpagedevice}if
 % -- Tune index
 /mkidx{	x 0 M showr
 	40 0 M show 20 0 RM
@@ -718,71 +528,71 @@ exch pop cos div
 }!
 %%EndSetup
 %%Page: 1 1
-%%PageOrientation: Landscape
-gsave 0.75 dup scale 90 rotate 0 -37.8 T
-% --- width 921.6
-67.20 0 T
-0 -22.00 T
+gsave 0.75 dup scale 0 1092.4 T
+% --- width 561.0
+12.0 F6 396.9 -1035.1 M (/github/workspace/abcs/repertoire.abc )showc
+752.2 -1035.1 M (1)showr
+1.267 dup scale
+32.83 0 T
+0 -2.84 T
 % --- xref 1
-0 -26.00 T
-% --- title Template Jig.
-460.8 4.0 M  20.0 F2 (Template Jig.)showc
-0 -6.00 T
-0 -14.00 T
-921.6 0 M  14.0 F1 (Traditional)showr
-0 -6.00 T
-% --- font 20.0 F2 
-67.5 -17.0 M gsave 0.70 dup scale 8 3 RM currentpoint hd 8.0 0 dt 21 su grestore 16.1 0 RM
- 15.0 F3 (= )show
+0.0 -20.9 M gsave 0.42 dup scale 8 3 RM currentpoint hd 8.0 0 dt 21 su grestore 9.7 0 RM
+ 12.0 F6 (= )show
 (110)show
-/y0{-69.0 add}!
-/yns0{-69.0 add}!
-71.5 -69.0 rdots 24.0 67.5 -69.0 bar 24.0 61.5 -69.0 thbar 
-24.0 214.8 -69.0 bar 
-24.0 340.0 -69.0 bar 
-24.0 482.3 -69.0 bar 
-24.0 594.2 -69.0 thbar 24.0 591.2 -69.0 bar 587.2 -69.0 rdots 
-dlw 597.2 0.0 -69.0 M 0 RL 597.2 0.0 -63.0 M 0 RL 597.2 0.0 -57.0 M 0 RL 597.2 0.0 -51.0 M 0 RL 597.2 0.0 -45.0 M 0 RL stroke
-12.0 F0 82.8 36.4 yns0 M (G)gcshow
-151.1 36.4 yns0 M (D)gcshow
-225.1 36.4 yns0 M (G)gcshow
-304.6 36.4 yns0 M (C)gcshow
-350.4 36.4 yns0 M (G)gcshow
-418.7 36.4 yns0 M (D)gcshow
-492.6 36.4 yns0 M (D)gcshow
-556.9 36.4 yns0 M (G)gcshow
-12.0 -63.0  tclef
-27.0 -45.0 sh0 
-(6)(8) 43.0 -69.0 tsig
-86.7 -63.0 hd 21.0 su
-126.7 -57.0 hd 1 21.0 sfu
-154.9 -60.0 hd 21.0 su
-194.9 -54.0 hd 1 -21.0 sfd
--3.2 51.6 4.9 225.1 -77.5 bm
-228.9 -57.0 hd -19.4 sd
-254.4 -54.0 hd -20.0 sd
-279.8 -51.0 hd -20.6 sd
-308.1 -48.0 hd 7.7 0 dt -21.0 sd
-354.2 -63.0 hd 21.0 su
-394.2 -57.0 hd 1 21.0 sfu
-422.5 -60.0 hd 21.0 su
-462.5 -54.0 hd 1 -21.0 sfd
-496.4 -57.0 hd -21.0 sd
-532.4 -60.0 hd 1 21.0 sfu
-560.7 -63.0 hd 7.7 3 dt 21.0 su
-0 -92.00 T
+% --- title Template Jig.
+280.5 -20.9 M  16.0 F4 (Template Jig.)showc
+561.0 -20.9 M  11.0 F6 (Traditional)showr
+0 -20.94 T
+0 -6.00 T
+% --- font 16.0 F4 
+/y0{-50.0 add}!
+/yns0{-50.0 add}!
+71.5 -50.0 rdots 24.0 67.5 -50.0 bar 24.0 61.5 -50.0 thbar 
+24.0 204.9 -50.0 bar 
+24.0 321.5 -50.0 bar 
+24.0 453.9 -50.0 bar 
+24.0 558.0 -50.0 thbar 24.0 555.0 -50.0 bar 551.0 -50.0 rdots 
+dlw 561.0 0.0 -50.0 M 0 RL 561.0 0.0 -44.0 M 0 RL 561.0 0.0 -38.0 M 0 RL 561.0 0.0 -32.0 M 0 RL 561.0 0.0 -26.0 M 0 RL stroke
+14.0 F5 80.3 36.8 yns0 M (G)gcshow
+143.8 36.8 yns0 M (D)gcshow
+212.7 36.8 yns0 M (G)gcshow
+286.7 36.8 yns0 M (C)gcshow
+329.4 36.8 yns0 M (G)gcshow
+392.8 36.8 yns0 M (D)gcshow
+461.7 36.8 yns0 M (D)gcshow
+521.5 36.8 yns0 M (G)gcshow
+12.0 -44.0  tclef
+27.0 -26.0 sh0 
+(6)(8) 43.0 -50.0 tsig
+85.8 -44.0 hd 21.0 su
+122.9 -38.0 hd 1 21.0 sfu
+149.2 -41.0 hd 21.0 su
+186.4 -35.0 hd 1 -21.0 sfd
+-3.2 48.0 4.9 214.3 -58.4 bm
+218.1 -38.0 hd -19.4 sd
+241.8 -35.0 hd -20.0 sd
+265.5 -32.0 hd -20.6 sd
+291.8 -29.0 hd 7.7 0 dt -21.0 sd
+334.8 -44.0 hd 21.0 su
+371.9 -38.0 hd 1 21.0 sfu
+398.3 -41.0 hd 21.0 su
+435.4 -35.0 hd 1 -21.0 sfd
+467.2 -38.0 hd -21.0 sd
+500.6 -41.0 hd 1 21.0 sfu
+526.9 -44.0 hd 7.7 3 dt 21.0 su
+0 -68.00 T
 grestore
 showpage
 %%EndPage: 1 1
 % -- Tune index
 %%Page: 2 2
-gsave 0.75 dup scale 90 rotate 0 -37.8 T
-1 dup scale
-67.20 0 T
-20.0 F2
-921.6 40 sub /x 1 index def
+gsave 0.75 dup scale 0 1092.4 T
+1.267 dup scale
+32.83 0 T
+16.0 F4
+561.0 40 sub /x 1 index def
 /xmax exch 40 sub def
-/fh -22.0 def
+/fh -17.6 def
 0 fh 1.6 mul T
 x 2 div 0 M(index)showc
 0 fh 1.6 mul T

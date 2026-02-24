@@ -13,24 +13,46 @@ def generate_index(start_dir):
         title_path = rel_path if rel_path else os.path.basename(start_dir)
         display_path = html.escape(title_path)
 
-        content = "<html><head><title>Index of /" + display_path + "</title></head><body>"
-        content += "<h1>Index of /" + display_path + "</h1><hr><pre>"
+        content = "<html><head><title>Index of /" + display_path + "</title>"
+        content += """
+        <style>
+            body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+            ul { list-style-type: none; padding: 0; }
+            li { margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 5px; display: flex; align-items: center; flex-wrap: wrap; }
+            .file-link { flex-grow: 1; text-decoration: none; color: #333; font-weight: bold; min-width: 200px; }
+            audio { margin: 10px 15px; flex-grow: 1; max-width: 400px; }
+            .download-btn { text-decoration: none; color: #007bff; font-size: 0.9em; white-space: nowrap; margin-left: 10px; }
+            .dir-link { font-weight: bold; color: #0056b3; }
+        </style>
+        </head><body>"""
+        content += "<h1>Index of /" + display_path + "</h1><hr><ul>"
 
         # Add link to parent directory if not at start_dir
         if root != start_dir:
-             content += '<a href="../">../</a>\n'
+             content += '<li><a href="../" class="dir-link">../</a></li>\n'
 
         for d in sorted(dirs):
             link = urllib.parse.quote(d)
             name = html.escape(d)
-            content += f'<a href="{link}/">{name}/</a>\n'
+            content += f'<li><a href="{link}/" class="dir-link">{name}/</a></li>\n'
+
         for f in sorted(files):
             if f == "index.html": continue
             link = urllib.parse.quote(f)
             name = html.escape(f)
-            content += f'<a href="{link}">{name}</a>\n'
 
-        content += "</pre><hr></body></html>"
+            if f.lower().endswith('.mp3'):
+                content += f'''
+                <li>
+                    <span class="file-link">{name}</span>
+                    <audio controls src="{link}"></audio>
+                    <a href="{link}" download class="download-btn">Download</a>
+                </li>
+                '''
+            else:
+                content += f'<li><a href="{link}" class="file-link">{name}</a></li>\n'
+
+        content += "</ul><hr></body></html>"
 
         with open(os.path.join(root, "index.html"), "w") as f:
             f.write(content)
