@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Compile PDFs and MP3s
-        uses: matt20013/abc_docker@v1.3.0
+        uses: matt20013/abc_docker@v1.4.0
         with:
           abc_dir: 'abcs'
           file_name: 'repertoire'
@@ -32,6 +32,9 @@ jobs:
 
       - name: Copy ABC for Web App
         run: cp abcs/repertoire.abc public/
+
+      - name: Generate Directory Indexes
+        run: python3 scripts/generate_indexes.py public/mp3s public/pdfs
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3

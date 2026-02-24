@@ -1,0 +1,605 @@
+%!PS-Adobe-2.0
+%%BoundingBox: 0 0 595 842
+%%Title: /github/workspace/abcs/repertoire.abc
+%%Creator: abcm2ps-8.14.11
+%%CreationDate: Feb 24, 2026 19:28
+%%Pages: (atend)
+%%LanguageLevel: 3
+%%EndComments
+%CommandLine: -O /github/workspace/public/pdfs/repertoire_raw.ps -F /scripts/default.fmt /github/workspace/abcs/repertoire.abc
+
+%%BeginSetup
+/!{bind def}bind def
+/bdef{bind def}!
+/T/translate load def
+/M/moveto load def
+/RM/rmoveto load def
+/L/lineto load def
+/RL/rlineto load def
+/C/curveto load def
+/RC/rcurveto load def
+/SLW/setlinewidth load def
+/defl 0 def
+/dlw{0.7 SLW}!
+/creator [(abcm2ps) 8 14 11] def
+/xydef{/y exch def/x exch def}!
+/xymove{/x 2 index def/y 1 index def M}!
+/showc{dup stringwidth pop .5 mul neg 0 RM show}!
+/showr{dup stringwidth pop neg 0 RM show}!
+/showb{	dup currentpoint 3 -1 roll show
+	.6 SLW
+	exch 2 sub exch 3 sub 3 -1 roll
+	stringwidth pop 4 add
+	currentfont/ScaleMatrix get 0 get .8 mul
+	4 add rectstroke}!
+/oct{/Times-Roman 12 selectfont M(8)show}!
+/octu{oct}!
+/octl{oct}!
+/bm{	M 3 copy RL neg 0 exch RL neg exch neg exch RL 0 exch RL fill}!
+/bnum{M/Times-Italic 12 selectfont showc}!
+/bnumb{	currentgray/Times-Italic 12 selectfont
+	3 index stringwidth pop 4 add
+	dup .5 mul neg 4 index add 3 index 3 -1 roll 8
+	1.0 setgray rectfill setgray M showc}!
+/tubr{3 sub M 0 3 RL RL 0 -3 RL dlw stroke}!
+/tubrl{3 add M 0 -3 RL RL 0 3 RL dlw stroke}!
+/dt{x y M RM currentpoint 1.2 0 360 arc fill}!
+/dnb{	dlw M -3.2 2 RM
+	0 7.2 RL
+	6.4 0 RM
+	0 -7.2 RL
+	currentpoint stroke M
+	-6.4 4.8 RM
+	0 2.4 RL
+	6.4 0 RL
+	0 -2.4 RL
+	fill}!
+/upb{	dlw M -2.6 9.4 RM
+	2.6 -8.8 RL
+	2.6 8.8 RL
+	stroke}!
+/grm{	M -5 2.5 RM
+	5 8.5 5.5 -4.5 10 2 RC
+	-5 -8.5 -5.5 4.5 -10 -2 RC fill}!
+/stc{	3 add M currentpoint 1.2 0 360 arc fill}!
+/emb{	1.2 SLW 1 setlinecap M -2.5 3 RM 5 0 RL stroke 0 setlinecap}!
+/cpu{	M -6 0 RM
+	0.4 7.3 11.3 7.3 11.7 0 RC
+	-1.3 6 -10.4 6 -11.7 0 RC fill}!
+/sld{	M -7.2 -4.8 RM
+	1.8 -0.7 4.5 0.2 7.2 4.8 RC
+	-2.1 -5 -5.4 -6.8 -7.6 -6 RC fill}!
+/trl{	/Times-BoldItalic 16 selectfont M -4 2 RM(tr)show}!
+/fng{/Bookman-Demi 8 selectfont M -3 1 RM show}!
+/dacs{/Times-Roman 16 selectfont 3 add M showc}!
+/crdc{/Times-Italic 14 selectfont 5 add M show}!
+/brth{/Times-BoldItalic 30 selectfont 6 add M(,)show}!
+/pf{/Times-BoldItalic 16 selectfont 5 add M show}!
+/sfz{	M -7 5 RM pop
+	/Times-Italic 14 selectfont(s)show
+	/Times-BoldItalic 16 selectfont(f)show
+	/Times-Italic 14 selectfont(z)show}!
+/cresc{	1 SLW M dup 5 RM
+	defl 1 and 0 eq
+	{dup neg 4 RL 4 RL}
+	{dup neg 2.2 RL 0 3.6 RM 2.2 RL}
+	ifelse stroke}!
+/dim{	1 SLW 5 add M
+	defl 2 and 0 eq
+	{dup 4 RL neg 4 RL}
+	{dup 2.2 RL 0 3.6 RM neg 2.2 RL}
+	ifelse stroke}!
+/o8va{	M
+	defl 1 and 0 eq
+	{14 sub currentpoint
+	-5 0 RM /Times-BoldItalic 12 selectfont(8)show
+	0 4 RM /Times-BoldItalic 10 selectfont(va)show
+	M 14 0 RM}if 0 6 RM
+	[6] 0 setdash 5 sub 0 RL currentpoint stroke [] 0 setdash
+	M defl 2 and 0 eq
+	{0 -6 RL stroke}if}!
+/o8vb{	M
+	defl 1 and 0 eq
+	{8 sub currentpoint
+	-5 0 RM /Times-BoldItalic 12 selectfont(8)show
+	0 4 RM /Times-BoldItalic 10 selectfont(vb)show
+	M 8 0 RM}if
+	[6] 0 setdash 5 sub 0 RL currentpoint stroke [] 0 setdash
+	M defl 2 and 0 eq
+	{0 6 RL stroke}if}!
+/dplus{	1.2 SLW 0.5 add M 0 6 RL -3 -3 RM 6 0 RL stroke}!
+/turnx{	2 copy turn .6 SLW 1.5 add M 0 9 RL stroke}!
+/lphr{1.2 SLW M 0 -18 RL stroke}!
+/mphr{1.2 SLW M 0 -12 RL stroke}!
+/sphr{1.2 SLW M 0 -6 RL stroke}!
+/ltr{	gsave 4 add T
+	0 6 3 -1 roll{
+		2{
+			0 0.4 M
+			2 1.9 3.4 2.3 3.9 0 C
+			2.1 0 L
+			1.9 0.8 1.4 0.7 0 -0.4 C
+			fill
+			180 rotate -6 0 T
+		}repeat
+		pop 6 0 T
+	}for
+	grestore}!
+/arp{gsave 90 rotate exch neg ltr grestore}!
+/gliss{	gsave 2 copy T
+exch 4 -1 roll exch sub 3 1 roll sub
+2 copy exch atan dup rotate
+exch pop cos div
+8 0 M 14 sub 0 RL stroke grestore}!
+/glisq{	gsave 2 copy T
+exch 4 -1 roll exch sub 3 1 roll sub
+2 copy exch atan dup rotate
+exch pop cos div
+17 sub 8 -4 ltr grestore}!
+/wedge{1 add M -1.5 5 RL 3 0 RL -1.5 -5 RL fill}!
+/opend{dlw M currentpoint 3 add 2.5 -90 270 arc stroke}!
+/snap{	dlw 2 copy M -3 6 RM
+	0 5 6 5 6 0 RC
+	0 -5 -6 -5 -6 0 RC
+	5 add M 0 -6 RL stroke}!
+/thumb{	dlw 2 copy M -2.5 7 RM
+	0 6 5 6 5 0 RC
+	0 -6 -5 -6 -5 0 RC
+	2 add M 0 -4 RL stroke}!
+/trem{	M -4.5 0 RM{
+		currentpoint
+		9 3 RL 0 -3 RL -9 -3 RL 0 3 RL
+		fill 5.4 sub M
+	}repeat}!
+/hl{	.8 SLW M -6 0 RM 12 0 RL stroke}!
+/hl1{	.8 SLW M -7 0 RM 14 0 RL stroke}!
+/hl2{	.7 SLW M -9 0 RM 18 0 RL stroke}!
+/gsc{gsave y T .8 dup scale 0 0}!
+/uflat{<95200028
+	0064000001b802ee
+	006402ea
+	008402ea
+	0084000c
+	00640008
+	00840154
+	00b2019c011c01ae01540168
+	01b800fa00dc00220084000c
+	00840028
+	00ba0028014c00f60106014a
+	00d401860084014e00840128
+	><0b00010303030a0105050105050a>}cvlit def
+/unat{<95200022
+	003cff42013602ee
+	006002ee
+	004002ee
+	00400022
+	0060002a
+	01160060
+	0116ff46
+	0136ff46
+	01360208
+	011401fe
+	006001cc
+	006002ee
+	0060009e
+	0060015c
+	01160190
+	011600d4
+	><0b00012a030a0123030a>}cvlit def
+/usharp{<95200024
+	003cff42019a02ee
+	008802be
+	0088ff44
+	00a8ff44
+	00a802be
+	0128ff76
+	0148ff76
+	014802ee
+	012802ee
+	004001d0
+	0040015c
+	019201bc
+	01920230
+	00400076
+	00400002
+	01920064
+	019200d6
+	><0b000123030a0123030a0123030a0123030a>}cvlit def
+/udblesharp{<95200046
+	003c006e019001c2
+	00f0011a
+	01180140013a015e018e015e
+	018e01be
+	012e01be
+	012e016a0110014800ea0122
+	00c2014800a4016a00a401be
+	004401be
+	0044015e
+	009a015e00bc014000e2011a
+	00bc00f4009a00d6004400d6
+	00440076
+	00a40076
+	00a400ca00c200ec00ea0112
+	011000ec012e00ca012e0076
+	018e0076
+	018e00d6
+	013a00d6011800f400f0011a
+	><0b0001050303050503030505030305050303050a>}cvlit def
+/udbleflat{<9520004c
+	00140000022602ee
+	001402ea
+	002c02ea
+	002c000c
+	00140008
+	002c0154
+	004e019c009e01ae00c80168
+	011300fa00660022002c000c
+	002c0028
+	0054002800c200f6008d014a
+	00680186002c014e002c0128
+	010e02ea
+	012602ea
+	0126000c
+	010e0008
+	01260154
+	0148019c019801ae01c20168
+	020d00fa016000220126000c
+	01260028
+	014e002801bc00f60187014a
+	016201860126014e01260128
+	><0b000123030a0105050105050a0123030a0105050105050a>}cvlit def
+/sh1{	gsave T .9 SLW
+	0 -7.8 M 0 15.4 RL stroke
+	-1.8 -2.7 M 3.6 1.1 RL 0 -2.2 RL -3.6 -1.1 RL 0 2.2 RL fill
+	-1.8 3.7 M 3.6 1.1 RL 0 -2.2 RL -3.6 -1.1 RL 0 2.2 RL fill
+	grestore}!
+/sh513{	gsave T .8 SLW
+	-2.5 -8.7 M 0 15.4 RL
+	0 -7.8 M 0 15.4 RL
+	2.5 -6.9 M 0 15.4 RL stroke
+	-3.7 -3.1 M 7.4 2.2 RL 0 -2.2 RL -7.4 -2.2 RL 0 2.2 RL fill
+	-3.7 3.2 M 7.4 2.2 RL 0 -2.2 RL -7.4 -2.2 RL 0 2.2 RL fill
+	grestore}!
+/ft1{gsave -1 1 scale exch neg exch ft0 grestore}!
+/ftx{	-1.4 2.7 RM
+	5.7 3.1 5.7 -3.6 0 -6.7 RC
+	3.9 4 4 7.6 0 5.8 RC
+	currentpoint fill 7.1 add M
+	dlw 0 -12.4 RL stroke}!
+/ft513{2 copy gsave -1 1 scale exch neg 3 add exch M ftx grestore
+	M 1.5 0 RM ftx}!
+/sh4tb[/.notdef/sh1/sh0/sh513/dsh0]def
+/sh4{sh4tb exch get cvx exec}!
+/ft4tb[/.notdef/ft1/ft0/ft513/dft0]def
+/ft4{ft4tb exch get cvx exec}!
+/bar{M 1 SLW 0 exch RL stroke}!
+/dotbar{[5] 0 setdash bar [] 0 setdash}!
+/thbar{3 -1 roll 3 exch rectfill}!
+/rdots{	2 copy 9 add M currentpoint 1.2 0 360 arc
+	15 add M currentpoint 1.2 0 360 arc fill}!
+/pmsig{0.3 SLW 12 add M currentpoint 5 0 360 arc stroke}!
+/pMsig{2 copy pmsig 12 add M currentpoint 1.3 0 360 arc fill}!
+/imsig{0.3 SLW 12 add 2 copy 5 add M 5 60 300 arc stroke}!
+/iMsig{2 copy imsig 12 add M currentpoint 1.3 0 360 arc fill}!
+/tsig{	1 add M gsave/Times-Bold 16 selectfont 1.2 1 scale
+	currentpoint 3 -1 roll showc
+	12 add M showc grestore}!
+/stsig{	7 add M gsave/Times-Bold 18 selectfont 1.2 1 scale
+	showc grestore}!
+/sep0{	dlw 0 M 0 RL stroke}!
+/bracket{M -5 2 RM currentpoint
+	-1.7 2 RM 10.5 -1 12 4.5 12 3.5 RC
+	0 -1 -3.5 -5.5 -8.5 -5.5 RC fill
+	3 SLW 2 add M
+	0 exch neg 8 sub RL currentpoint stroke
+	M -1.7 0 RM
+	10.5 1 12 -4.5 12 -3.5 RC
+	0 1 -3.5 5.5 -8.5 5.5 RC fill}!
+/srep{	M -1 -6 RM 11 12 RL 3 0 RL -11 -12 RL -3 0 RL fill}!
+/repbra{gsave dlw T 0 -20 M
+	0 20 3 index 1 and 1 eq{RL}{RM}ifelse 0
+	RL 2 and 2 eq{0 -20 RL}if stroke
+	4 exch M show grestore}!
+/SL{M RC RL RC closepath fill}!
+/dSL{	M [4] 0 setdash .8 SLW RC stroke [] 0 setdash}!
+/strw{	gsave 0 -2000 M/strop/show load def 1 setgray str
+	0 setgray currentpoint pop/w exch def grestore}!
+/jshow{w 0 32 4 -1 roll widthshow}!
+/strop/show load def
+/arrayshow{{dup type/stringtype eq{strop}{glyphshow}ifelse}forall}def
+/gcshow{show}!
+/agcshow{arrayshow}!
+/box{.6 SLW rectstroke}!
+/boxend{currentpoint pop/x exch def}!
+/boxmark{currentpoint pop dup x gt
+	{/x exch def}{pop}ifelse}!
+/boxdraw{x 3 index sub 2 add exch box}!
+/gxshow{0 9 3 -1 roll widthshow}!
+/anshow{show}!
+/aanshow{arrayshow}!
+/wln{M .8 SLW 0 RL stroke}!
+/hyph{	.8 SLW 3 add M
+	dup cvi 20 idiv 3 mul 25 add
+	1 index cvi exch idiv 1 add exch 1 index div
+	dup 4 sub 3 1 roll .5 mul 2 sub 0 RM
+	{4 0 RL dup 0 RM}repeat stroke pop}!
+/lyshow{show}!
+/alyshow{arrayshow}!
+/pfthd{/x 2 index def/y 1 index def dsh0
+	.7 SLW x y M x y 4 0 360 arc stroke}!
+/pdshhd{pshhd}!
+/pdfthd{pfthd}!
+/ghd{	xymove
+	1.7 1.5 RM
+	-1.32 2.31 -5.94 -0.33 -4.62 -2.64 RC
+	1.32 -2.31 5.94 0.33 4.62 2.64 RC fill}!
+/gua{x y M -1 4 RM RL stroke}!
+/gda{x y M -5 -4 RM RL stroke}!
+/ghl{	.6 SLW M -3.5 0 RM 7 0 RL stroke}!
+/gsl{dlw M RC stroke}!
+/custos{2 copy M -4 0 RM 2 2.5 RL 2 -2.5 RL 2 2.5 RL 2 -2.5 RL
+	-2 -2.5 RL -2 2.5 RL -2 -2.5 RL -2 2.5 RL fill
+	M 3.5 0 RM 5 7 RL dlw stroke}!
+/glypharray{{glyphshow}forall}!
+/showerror{gsave 1 0.7 0.7 setrgbcolor 2.5 SLW newpath
+	30 0 360 arc stroke grestore}!
+/pdfmark where{pop}{userdict/pdfmark/cleartomark load put}ifelse
+0 setlinecap 0 setlinejoin
+/musgly{music 24 selectfont glyphshow}!
+/brace{gsave
+	T -7.5 0 M -.042 mul 3 exch scale/uniE000 musgly
+	grestore}!
+/sgno{	M -6 4 RM/uniE047 musgly}!
+/coda{	M -12 6 RM/uniE048 musgly}!
+/tclef{M -8 0 RM/uniE050 musgly}!
+/cclef{M -8 0 RM/uniE05C musgly}!
+/bclef{M -8 0 RM/uniE062 musgly}!
+/pclef{M -6 0 RM/uniE069 musgly}!
+/stclef{M -8 0 RM/uniE07A musgly}!
+/scclef{M -8 0 RM/uniE07B musgly}!
+/sbclef{M -7 0 RM/uniE07C musgly}!
+/csig{	M 0 0 RM/uniE08A musgly}!
+/ctsig{M 0 0 RM/uniE08B musgly}!
+/HDD{	xymove -7 0 RM/uniE0A0 musgly}!
+/breve{xymove -6 0 RM/uniE0A1 musgly}!
+/HD{	xymove -5.2 0 RM/uniE0A2 musgly}!
+/Hd{	xymove -3.8 0 RM/uniE0A3 musgly}!
+/hd{	xymove -3.7 0 RM/uniE0A4 musgly}!
+/ft0{	M -3 0 RM/uniE260 musgly}!
+/nt0{	M -2 0 RM/uniE261 musgly}!
+/sh0{	M -3 0 RM/uniE262 musgly}!
+/dsh0{	M -3 0 RM/uniE263 musgly}!
+/pshhd{xymove -3 0 RM/uniE263 musgly}!
+/dft0{	M -3 0 RM/uniE264 musgly}!
+/accent{M -3 0 RM/uniE4A0 musgly}!
+/marcato{M -3 0 RM/uniE4AC musgly}!
+/hld{	M -7 0 RM/uniE4C0 musgly}!
+/r00{	xymove -1.5 0 RM/uniE4E1 musgly}!
+/r0{	xymove -1.5 0 RM/uniE4E2 musgly}!
+/r1{	xymove -3.5 6 RM/uniE4E3 musgly}!
+/r2{	xymove -3.2 0 RM/uniE4E4 musgly}!
+/r4{	xymove -3 0 RM/uniE4E5 musgly}!
+/r8{	xymove -3 0 RM/uniE4E6 musgly}!
+/r16{	xymove -4 0 RM/uniE4E7 musgly}!
+/r32{	xymove -4 0 RM/uniE4E8 musgly}!
+/r64{	xymove -4 0 RM/uniE4E9 musgly}!
+/r128{	xymove -4 0 RM/uniE4EA musgly}!
+/mrest{M -10 0 RM/uniE4EE musgly}!
+/mrep{	M -6 0 RM/uniE500 musgly}!
+/mrep2{M -9 0 RM/uniE501 musgly}!
+/turn{	M -4 0 RM/uniE567 musgly}!
+/umrd{	M -7 2 RM/uniE56C musgly}!
+/lmrd{	M -7 2 RM/uniE56D musgly}!
+/ped{	M -10 0 RM/uniE650 musgly}!
+/pedoff{M -6 0 RM/uniE655 musgly}!
+/longa{xymove -6 0 RM/uniE95C musgly}!
+/music/Petaluma def
+/su{dlw x y M 3.5 1.0 RM 1.0 sub 0 exch RL stroke}!
+/sd{dlw x y M -3.5 -1.0 RM 1.0 add 0 exch RL stroke}!
+/sfu{	dlw x y M 3.5 1.0 RM
+	1.0 sub 0 exch RL currentpoint stroke
+	M dup 1 eq{
+		pop
+		0.6 -5.6 9.6 -9 5.6 -18.4 RC
+		1.6 6 -1.3 11.6 -5.6 12.8 RC fill
+	  }{
+		1 sub{	currentpoint
+			0.9 -3.7 9.1 -6.4 6 -12.4 RC
+			1 5.4 -4.2 8.4 -6 8.4 RC
+			fill 5.4 sub M
+		}repeat
+		1.2 -3.2 9.6 -5.7 5.6 -14.6 RC
+		1.6 5.4 -1 10.2 -5.6 11.4 RC fill
+	  }ifelse}!
+/sfd{	dlw x y M -3.5 -1.0 RM
+	1.0 add 0 exch RL currentpoint stroke
+	M dup 1 eq{
+		pop
+		0.6 5.6 9.6 9 5.6 18.4 RC
+		1.6 -6 -1.3 -11.6 -5.6 -12.8 RC fill
+	  }{
+		1 sub{	currentpoint
+			0.9 3.7 9.1 6.4 6 12.4 RC
+			1 -5.4 -4.2 -8.4 -6 -8.4 RC
+			fill 5.4 add M
+		}repeat
+		1.2 3.2 9.6 5.7 5.6 14.6 RC
+		1.6 -5.4 -1 -10.2 -5.6 -11.4 RC fill
+	  }ifelse}!
+/sfs{	dup 0 lt{
+		dlw x y M -3.5 -1.0 RM
+		1.0 add 0 exch RL currentpoint stroke
+		M{	currentpoint
+			7 3.2 RL
+			0 3.2 RL
+			-7 -3.2 RL
+			fill 5.4 add M
+		}repeat
+	}{
+		dlw x y M 3.5 1.0 RM
+		1.0 sub 0 exch RL currentpoint stroke
+		M{	currentpoint
+			7 -3.2 RL
+			0 -3.2 RL
+			-7 3.2 RL
+			fill 5.4 sub M
+		}repeat
+	}ifelse}!
+/gu{	.6 SLW x y M
+	2.3 0 RM 0 exch RL stroke}!
+/gd{	.6 SLW x y M
+	-2.3 0 RM 0 exch RL stroke}!
+/sgu{	.6 SLW x y M 2.3 0 RM
+	0 exch RL currentpoint stroke
+	M dup 1 eq{
+		pop
+		0.6 -3.4 5.6 -3.8 3 -10 RC
+		1.2 4.4 -1.4 7 -3 7 RC fill
+	  }{
+		{	currentpoint
+			1 -3.2 5.6 -2.8 3.2 -8 RC
+			1.4 4.8 -2.4 5.4 -3.2 5.2 RC
+			fill 3.5 sub M
+		}repeat
+	  }ifelse}!
+/sgd{	.6 SLW x y M -2.3 0 RM
+	0 exch RL currentpoint stroke
+	M dup 1 eq{
+		pop
+		0.6 3.4 5.6 3.8 3 10 RC
+		1.2 -4.4 -1.4 -7 -3 -7 RC fill
+	  }{
+		{	currentpoint
+			1 3.2 5.6 2.8 3.2 8 RC
+			1.4 -4.8 -2.4 -5.4 -3.2 -5.2 RC
+			fill 3.5 add M
+		}repeat
+	  }ifelse}!
+/sgs{	.6 SLW x y M 2.3 0 RM
+	0 exch RL currentpoint stroke
+	M{	currentpoint
+		3 -1.5 RL 0 -2 RL -3 1.5 RL
+		closepath fill 3 sub M
+	}repeat}!
+/fontredef{
+findfont dup length
+dict begin
+{1 index/FID ne{def}{pop pop}ifelse}forall
+currentdict
+end
+definefont pop}!
+
+/mkfont{findfont dup length 1 add dict begin
+	{1 index/FID ne{def}{pop pop}ifelse}forall
+	CharStrings/double_sharp known not{
+	    /CharStrings CharStrings dup length dict copy def
+	    FontMatrix 0 get 1 eq{
+		CharStrings/sharp{pop .46 0 setcharwidth .001 dup scale usharp ufill}bind put
+		CharStrings/flat{pop .46 0 setcharwidth .001 dup scale uflat ufill}bind put
+		CharStrings/natural{pop .40 0 setcharwidth .001 dup scale unat ufill}bind put
+		CharStrings/double_sharp{pop .46 0 setcharwidth .001 dup scale udblesharp ufill}bind put
+		CharStrings/double_flat{pop .50 0 setcharwidth .001 dup scale udbleflat ufill}bind put
+	    }{
+		CharStrings/sharp{pop 460 0 setcharwidth usharp ufill}bind put
+		CharStrings/flat{pop 460 0 setcharwidth uflat ufill}bind put
+		CharStrings/natural{pop 400 0 setcharwidth unat ufill}bind put
+		CharStrings/double_sharp{pop 460 0 setcharwidth udblesharp ufill}bind put
+		CharStrings/double_flat{pop 500 0 setcharwidth udbleflat ufill}bind put
+	    }ifelse
+	}if currentdict definefont pop end}!
+/MarkerFelt-Wide-utf8/MarkerFelt-Wide mkfont
+/F4{/MarkerFelt-Wide-utf8 exch selectfont}!
+/Courier-Bold-utf8/Courier-Bold mkfont
+/F5{/Courier-Bold-utf8 exch selectfont}!
+/Courier-utf8/Courier mkfont
+/F6{/Courier-utf8 exch selectfont}!
+/setpagedevice where{pop
+	<</PageSize[595 842]>>setpagedevice}if
+% -- Tune index
+/mkidx{	x 0 M showr
+	40 0 M show 20 0 RM
+	{(  .  )show currentpoint pop xmax ge{exit}if}loop
+	0 fh T
+}!
+/mkidx2{	x 0 M showr
+	40 0 M arrayshow 20 0 RM
+	{(  .  )show currentpoint pop xmax ge{exit}if}loop
+	0 fh T
+}!
+%%EndSetup
+%%Page: 1 1
+gsave 0.75 dup scale 0 1092.4 T
+% --- width 561.0
+12.0 F6 396.9 -1035.1 M (/github/workspace/abcs/repertoire.abc )showc
+752.2 -1035.1 M (1)showr
+1.267 dup scale
+32.83 0 T
+0 -2.84 T
+% --- xref 1
+0.0 -20.9 M gsave 0.42 dup scale 8 3 RM currentpoint hd 8.0 0 dt 21 su grestore 9.7 0 RM
+ 12.0 F6 (= )show
+(110)show
+% --- title Template Jig.
+280.5 -20.9 M  16.0 F4 (Template Jig.)showc
+561.0 -20.9 M  11.0 F6 (Traditional)showr
+0 -20.94 T
+0 -6.00 T
+% --- font 16.0 F4 
+/y0{-50.0 add}!
+/yns0{-50.0 add}!
+71.5 -50.0 rdots 24.0 67.5 -50.0 bar 24.0 61.5 -50.0 thbar 
+24.0 204.9 -50.0 bar 
+24.0 321.5 -50.0 bar 
+24.0 453.9 -50.0 bar 
+24.0 558.0 -50.0 thbar 24.0 555.0 -50.0 bar 551.0 -50.0 rdots 
+dlw 561.0 0.0 -50.0 M 0 RL 561.0 0.0 -44.0 M 0 RL 561.0 0.0 -38.0 M 0 RL 561.0 0.0 -32.0 M 0 RL 561.0 0.0 -26.0 M 0 RL stroke
+14.0 F5 80.3 36.8 yns0 M (G)gcshow
+143.8 36.8 yns0 M (D)gcshow
+212.7 36.8 yns0 M (G)gcshow
+286.7 36.8 yns0 M (C)gcshow
+329.4 36.8 yns0 M (G)gcshow
+392.8 36.8 yns0 M (D)gcshow
+461.7 36.8 yns0 M (D)gcshow
+521.5 36.8 yns0 M (G)gcshow
+12.0 -44.0  tclef
+27.0 -26.0 sh0 
+(6)(8) 43.0 -50.0 tsig
+85.8 -44.0 hd 21.0 su
+122.9 -38.0 hd 1 21.0 sfu
+149.2 -41.0 hd 21.0 su
+186.4 -35.0 hd 1 -21.0 sfd
+-3.2 48.0 4.9 214.3 -58.4 bm
+218.1 -38.0 hd -19.4 sd
+241.8 -35.0 hd -20.0 sd
+265.5 -32.0 hd -20.6 sd
+291.8 -29.0 hd 7.7 0 dt -21.0 sd
+334.8 -44.0 hd 21.0 su
+371.9 -38.0 hd 1 21.0 sfu
+398.3 -41.0 hd 21.0 su
+435.4 -35.0 hd 1 -21.0 sfd
+467.2 -38.0 hd -21.0 sd
+500.6 -41.0 hd 1 21.0 sfu
+526.9 -44.0 hd 7.7 3 dt 21.0 su
+0 -68.00 T
+grestore
+showpage
+%%EndPage: 1 1
+% -- Tune index
+%%Page: 2 2
+gsave 0.75 dup scale 0 1092.4 T
+1.267 dup scale
+32.83 0 T
+16.0 F4
+561.0 40 sub /x 1 index def
+/xmax exch 40 sub def
+/fh -17.6 def
+0 fh 1.6 mul T
+x 2 div 0 M(index)showc
+0 fh 1.6 mul T
+(Template Jig.)(1)mkidx
+%%PageTrailer
+grestore
+showpage
+%%Trailer
+%%Pages: 2
+%EOF
