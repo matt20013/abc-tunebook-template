@@ -1,12 +1,12 @@
 %!PS-Adobe-2.0
 %%BoundingBox: 0 0 595 842
-%%Title: /abcs/repertoire.abc
+%%Title: /github/workspace/abcs/repertoire.abc
 %%Creator: abcm2ps-8.14.11
-%%CreationDate: Feb 24, 2026 19:11
+%%CreationDate: Feb 24, 2026 19:28
 %%Pages: (atend)
 %%LanguageLevel: 3
 %%EndComments
-%CommandLine: -O /pdfs/repertoire_raw.ps -F /scripts/default.fmt /abcs/repertoire.abc
+%CommandLine: -O /github/workspace/public/pdfs/repertoire_raw.ps -F /scripts/default.fmt /github/workspace/abcs/repertoire.abc
 
 %%BeginSetup
 /!{bind def}bind def
@@ -489,14 +489,6 @@ currentdict
 end
 definefont pop}!
 
-/fontredef{
-findfont dup length
-dict begin
-{1 index/FID ne{def}{pop pop}ifelse}forall
-currentdict
-end
-definefont pop}!
-
 /mkfont{findfont dup length 1 add dict begin
 	{1 index/FID ne{def}{pop pop}ifelse}forall
 	CharStrings/double_sharp known not{
@@ -538,7 +530,7 @@ definefont pop}!
 %%Page: 1 1
 gsave 0.75 dup scale 0 1092.4 T
 % --- width 561.0
-12.0 F6 396.9 -1035.1 M (/abcs/repertoire.abc )showc
+12.0 F6 396.9 -1035.1 M (/github/workspace/abcs/repertoire.abc )showc
 752.2 -1035.1 M (1)showr
 1.267 dup scale
 32.83 0 T
