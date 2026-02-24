@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interactive Tunebook</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/abcjs/6.2.2/abcjs-basic-min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/abcjs@6.2.2/abcjs-audio.css">
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .downloads { margin: 20px 0; padding: 15px; background: #f5f5f5; border-radius: 5px; }
+        .downloads a { margin-right: 15px; text-decoration: none; color: #0056b3; font-weight: bold; }
+        /* Hide the CSS warning if the CSS loads successfully */
+        .abcjs-css-warning { display: none; }
+    </style>
+</head>
+<body>
+    <h1>My Tunebook</h1>
+
+    <div class="downloads">
+        <strong>Downloads:</strong>
+        <a href="pdfs/repertoire.pdf" target="_blank">📄 Download PDF Tunebook</a>
+        <a href="mp3s/" target="_blank">🎵 Browse MP3 Backing Tracks</a>
+    </div>
+
+    <div id="paper"></div>
+    <div id="audio"></div>
+
+    <script>
+        fetch('repertoire.abc')
+            .then(response => response.text())
+            .then(abcText => {
+                var visualObj = ABCJS.renderAbc("paper", abcText, { responsive: "resize" })[0];
+
+                if (ABCJS.synth.supportsAudio()) {
+                    var synthControl = new ABCJS.synth.SynthController();
+                    synthControl.load("#audio", null, { displayLoop: true, displayRestart: true, displayPlay: true, displayProgress: true, displayWarp: true });
+
+                    var createSynth = new ABCJS.synth.CreateSynth();
+                    createSynth.init({ visualObj: visualObj }).then(function () {
+                        synthControl.setTune(visualObj, false).then(function (response) {
+                            console.log("Audio successfully loaded.");
+                        }).catch(function (error) {
+                            console.warn("Audio problem:", error);
+                        });
+                    }).catch(function (error) {
+                        console.warn("Audio problem:", error);
+                    });
+                } else {
+                    document.querySelector("#audio").innerHTML = "<div class='audio-error'>Audio is not supported in this browser.</div>";
+                }
+            })
+            .catch(error => console.error("Error loading ABC file:", error));
+    </script>
+</body>
+</html>
